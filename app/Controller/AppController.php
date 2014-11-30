@@ -41,7 +41,7 @@ public $components = array(
              'authError' => 'Permissão negada.',
              'loginAction' => '/funcionarios/login',
              'loginRedirect' => array( // pra onde ir assim que logar?
-                 'controller' => 'posts', // TODO: substituir por `casos'
+                 'controller' => 'pages', // TODO: substituir por `casos'
                  'action' => 'index'
              ),
              'logoutRedirect' => array( // pra onde ir assim que deslogar?
