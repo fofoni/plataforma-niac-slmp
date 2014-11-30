@@ -70,7 +70,7 @@ public function beforeFilter() {
     //          Isso precisa ser feito para adicionar o primeiro usuário ao
     //          banco de dados. Mas não pode esquecer de, depois de criado esse
     //          primeiro usuário, remover o 'add'!!
-    $this->Auth->allow('login');
+    $this->Auth->allow('login', 'add');
 }
 
 }
