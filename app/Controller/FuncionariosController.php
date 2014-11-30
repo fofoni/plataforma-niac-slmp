@@ -8,7 +8,20 @@ class FuncionariosController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('add');
+        $this->Auth->allow('logout');
+    }
+
+    public function login() {
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                return $this->redirect($this->Auth->redirect());
+            }
+            $this->Session->setFlash(__('Usuário ou senha inválidos :\\'));
+        }
+    }
+
+    public function logout() {
+        return $this->redirect($this->Auth->logout());
     }
 
     public function index() {
@@ -27,6 +40,7 @@ class FuncionariosController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->Funcionario->create();
+            $user = array();
             if ($this->Funcionario->save($this->request->data)) {
                 $this->Session->setFlash(
                     __('O novo funcionário foi adicionado!')

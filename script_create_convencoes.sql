@@ -41,6 +41,7 @@ CREATE TABLE funcionarios (
   dataSaida DATE NULL,
   PRIMARY KEY(pessoas_idPessoa),
   INDEX funcionarios_FKIndex1(pessoas_idPessoa),
+  UNIQUE username,
   FOREIGN KEY(pessoas_idPessoa)
     REFERENCES pessoas(idPessoa)
       ON DELETE NO ACTION
@@ -48,7 +49,7 @@ CREATE TABLE funcionarios (
 );
 
 -- CREATE TABLE users (
---   funcionarios_pessoas_idPessoa INTEGER NOT NULL,
+--   idUser INTEGER NOT NULL,
 --   username VARCHAR(32) NOT NULL,
 --   password VARCHAR(255) NOT NULL
 --   INDEX users_
