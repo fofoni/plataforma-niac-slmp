@@ -28,12 +28,8 @@ CREATE TABLE casos (
   PRIMARY KEY(idCaso)
 );
 
--- ATENÇÃO: 'username' e 'password' são convenções do Cake
--- NÃO pode substituir por português
 CREATE TABLE funcionarios (
   pessoas_idPessoa INTEGER NOT NULL,
-  username VARCHAR(32) NOT NULL,
-  password VARCHAR(255) NOT NULL,
   supervisor BOOL NULL,
   ativo BOOL NULL,
   area TINYTEXT NOT NULL,
@@ -46,13 +42,6 @@ CREATE TABLE funcionarios (
       ON DELETE NO ACTION
       ON UPDATE NO ACTION
 );
-
--- CREATE TABLE users (
---   funcionarios_pessoas_idPessoa INTEGER NOT NULL,
---   username VARCHAR(32) NOT NULL,
---   password VARCHAR(255) NOT NULL
---   INDEX users_
--- );
 
 CREATE TABLE clientes (
   pessoas_idPessoa INTEGER NOT NULL,
