@@ -6,6 +6,11 @@ App::uses('AppController', 'Controller');
  */
 class FuncionariosController extends AppController {
 
+    public $uses = array(
+        'Funcionario',
+        'Pessoa'
+    );
+
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('logout');
@@ -39,8 +44,31 @@ class FuncionariosController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
+            debug($this->request->data);
+            $pessoa = array();
+            $p_nome = $this->request->data['Pessoa']['nome'];
+            $p_data = $this->request->data['Pessoa']['dataNascimento'];
+            $p_mail= $this->request->data['Pessoa']['email'];
+            $p_tel= $this->request->data['Pessoa']['telefone'];
+            $p_obs= $this->request->data['Pessoa']['observacao'];
+            if (isset($p_nome) && !empty($p_nome) && !is_null($p_nome) &&
+                trim($p_nome) !== '') { $pessoa['nome'] = $p_nome; }
+            if (isset($p_data) && !empty($p_data) && !is_null($p_data))
+                { $pessoa['dataNascimento'] = $p_data; }
+            if (isset($p_mail) && !empty($p_mail) && !is_null($p_mail) &&
+                trim($p_mail) !== '') { $pessoa['email'] = $p_mail; }
+            if (isset($p_tel) && !empty($p_tel) && !is_null($p_tel) &&
+                trim($p_tel) !== '') { $pessoa['telefone'] = $p_tel; }
+            if (isset($p_obs) && !empty($p_obs) && !is_null($p_obs) &&
+                trim($p_obs) !== '') { $pessoa['observacao'] = $p_obs; }
+            $this->Pessoa->create();
+            $this->Pessoa->save($pessoa);
             $this->Funcionario->create();
-            $user = array();
+            // comantado, pq já está presente no beforeSave()
+            //$this->Funcionario->set('dataEntrada', mktime());
+            $this->request->data['Funcionario']['pessoas_idPessoa'] =
+                $this->Pessoa->getLastInsertId();
+            debug($this->request->data);
             if ($this->Funcionario->save($this->request->data)) {
                 $this->Session->setFlash(
                     __('O novo funcionário foi adicionado!')
@@ -69,8 +97,8 @@ class FuncionariosController extends AppController {
                 __('Não foi possível modificar os dados do funcionário!')
             );
         } else {
-            $this->request->data = $this->User->read(null, $id);
-            unset($this->request->data['User']['password']);
+            $this->request->data = $this->Funcionario->read(null, $id);
+            unset($this->request->data['Funcionario']['password']);
         }
     }
 

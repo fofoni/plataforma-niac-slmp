@@ -12,7 +12,7 @@ class PessoaFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'idPessoa' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
-		'nome' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
+		'nome' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'dataNascimento' => array('type' => 'date', 'null' => false, 'default' => null),
 		'cpf' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'rg' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -34,7 +34,7 @@ class PessoaFixture extends CakeTestFixture {
 		array(
 			'idPessoa' => 1,
 			'nome' => 'Lorem ipsum dolor sit amet',
-			'dataNascimento' => '2014-11-29',
+			'dataNascimento' => '2014-11-30',
 			'cpf' => 'Lorem ipsum dolor sit amet',
 			'rg' => 'Lorem ipsum dolor sit amet',
 			'email' => 'Lorem ipsum dolor sit amet',

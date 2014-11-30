@@ -1,7 +1,7 @@
 
 CREATE TABLE pessoas (
   idPessoa INTEGER NOT NULL AUTO_INCREMENT,
-  nome TINYTEXT,
+  nome TINYTEXT NOT NULL,
   dataNascimento DATE NOT NULL,
   cpf TINYTEXT,
   rg TINYTEXT,
@@ -41,7 +41,7 @@ CREATE TABLE funcionarios (
   dataSaida DATE NULL,
   PRIMARY KEY(pessoas_idPessoa),
   INDEX funcionarios_FKIndex1(pessoas_idPessoa),
-  UNIQUE username,
+  UNIQUE(username),
   FOREIGN KEY(pessoas_idPessoa)
     REFERENCES pessoas(idPessoa)
       ON DELETE NO ACTION

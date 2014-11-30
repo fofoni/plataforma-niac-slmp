@@ -1,7 +1,12 @@
 Falta fazer:
 
 - login (fonini tá fazendo)
-  - no View Funcionarios/login.ctp, tem que dar um jeito de fazer o Form gerar
-    inputs pra campos de mais de um model ao mesmo tempo.
+  - garantir que não dá pra criar dois com o mesmo username
+  - adicionar a dataEntrada automaticamente
+  - corrigir erro na hora de fazer o login (ele não aceita usuário e senha)
+  - views, e interações entre usuários
+- adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
+  funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
+  Custom Validation Rules
 - todo o resto (à medida que quem for lembrando de passos específicos,
   vai adicionando aqui)
