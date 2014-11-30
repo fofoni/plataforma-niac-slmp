@@ -1,19 +1,24 @@
 Falta fazer:
 
 - login (fonini tá fazendo)
-  - garantir que não dá pra criar dois com o mesmo username
   - adicionar a dataEntrada automaticamente
   - corrigir erro na hora de fazer o login (ele não aceita usuário e senha)
   - garantir que quando ele não consegue fazer o Funcionário mas conseguiu fazer
     a pessoa correspondente, ele deleta a Pessoa recém criada.
   - views, e interações entre usuários
+
 - adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
   funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
   Custom Validation Rules
+
 - página index com as opções de cadastro
+
 - cadastro de casos (cláuvin tá fazendo)
 	- adicionar regras de validação para cadastro de casos (cláuvin tá fazendo)
-	
+
+
+===============================================================================
+
 
 Já feito:
 
