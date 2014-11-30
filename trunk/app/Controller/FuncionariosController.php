@@ -44,7 +44,6 @@ class FuncionariosController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
-            debug($this->request->data);
             $pessoa = array();
             $p_nome = $this->request->data['Pessoa']['nome'];
             $p_data = $this->request->data['Pessoa']['dataNascimento'];

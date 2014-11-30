@@ -1,5 +1,8 @@
 <?php
-App::uses('AppModel', 'Model');
+App::uses(
+    'AppModel', 'Model',
+    'BlowfishPasswordHasher', 'Controller/Component/Auth'
+);
 /**
  * Funcionario Model
  *
