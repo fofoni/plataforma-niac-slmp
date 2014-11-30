@@ -14,6 +14,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 ?>
+agasfga
 <div class="<?php echo $pluralVar; ?> view">
 <h2><?php echo "<?php echo __('{$singularHumanName}'); ?>"; ?></h2>
 	<dl>

@@ -15,6 +15,11 @@
 <h1>Rendas</h1>
 <h1>Saúdes</h1>
 <h1>Turnos das Pessoas</h1>
+<?php echo $this->Html->link(
+	'Posts(aquela versao simples com exportação de pdf)',
+	array('controller' => 'posts', 'action' => 'index')
+); ?>
+<br>
 <br>
 <?php echo $this->Html->link('Logout',
 					array('controller' => 'funcionarios',
