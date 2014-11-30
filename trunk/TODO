@@ -28,14 +28,19 @@ Falta fazer:
   - garantir que funcionários de certas áreas só consigam visualizar o que lhes
     é permitido
 
+- logout
+- index de funcionários
+- adição de funcionários
+  
+  
 - adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
   funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
   Custom Validation Rules
 
 - página index com as opções de cadastro
 
-- cadastro de casos (cláuvin tá fazendo)
-	- adicionar regras de validação para cadastro de casos (cláuvin tá fazendo)
+- adicionar regras de validação para cadastro de casos
+- adição de geração de PDFs ao template do CAKE padrão(cláuvin tá fazendo)
 
 
 ===============================================================================
@@ -44,3 +49,4 @@ Falta fazer:
 Já feito:
 
 - Exportação de view do posts pra PDF(cláuvin fez)
+- cadastro de casos (cláuvin fez)
