@@ -60,7 +60,7 @@ CREATE TABLE clientes (
   cor TINYTEXT,
   genero TINYTEXT,
   nomeSocial TINYTEXT,
-  estadoCivil ENUM NULL,
+  estadoCivil ENUM('solteiro', 'casado', 'divorciado', 'viuvo'),
   dataCadastro DATE NULL,
   PRIMARY KEY(pessoas_idPessoa),
   INDEX clientes_FKIndex1(pessoas_idPessoa),
@@ -96,7 +96,7 @@ CREATE TABLE familias (
 
 CREATE TABLE escolaridades (
   clientes_pessoas_idPessoa INTEGER NOT NULL,
-  situacaoEscolar ENUM NULL,
+  situacaoEscolar ENUM('Sem Ensino', 'Ensino Fundamental Incompleto',  'Ensino Fundamental Completo', 'Ensino Médio Incompleto', 'Ensino Médio Completo', 'Bacharelado Incompleto', 'Bacharelado Completo',  'Mestrado Incompleto', 'Mestrado Completo', 'Doutorado Incompleto',  'Doutorado Completo'),
   tipoInstituicao BOOL NULL,
   nomeInstituicao TINYTEXT,
   turno TINYTEXT,
@@ -212,7 +212,7 @@ CREATE TABLE moradias (
   numero INTEGER NULL,
   cep INTEGER NULL,
   complemento TINYTEXT,
-  pontoReferencia VARCHAR() NULL,
+  pontoReferencia VARCHAR(255) NULL,
   tempoMoradia TINYTEXT,
   situacaoMoradia TINYTEXT,
   saneamentoBasico INTEGER NULL,
@@ -227,5 +227,3 @@ CREATE TABLE moradias (
       ON DELETE NO ACTION
       ON UPDATE NO ACTION
 );
-
-
