@@ -71,7 +71,7 @@ public function beforeFilter() {
     // fazer login; ou seja, ainda estamos na fase em que pessoas
     // não-autenticadas pode fazer tudo.
 //     $this->Auth->allow('login');
-    $this->Auth->allow('login', 'index', 'view', 'add1', 'add2', 'edit', 'add',
+    $this->Auth->allow('login', 'index', 'view', 'edit', 'add', 'display',
                        'view_pdf', 'delete');
 }
 

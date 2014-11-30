@@ -36,7 +36,11 @@ class PagesController extends AppController {
  * @var array
  */
 	public $uses = array();
-
+	
+	public function index() {
+	
+	}
+	
 /**
  * Displays a view
  *
@@ -73,4 +77,6 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+	
+
 }
