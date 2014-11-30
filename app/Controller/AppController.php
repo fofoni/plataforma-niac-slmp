@@ -45,9 +45,8 @@ public $components = array(
                  'action' => 'index'
              ),
              'logoutRedirect' => array( // pra onde ir assim que deslogar?
-                 'controller' => 'pages', // TODO: garantir que isso vai pra
-                 'action' => 'display',   //       pagina de login
-                 'home'
+                 'controller' => 'funcionarios',
+                 'action' => 'deslogado'
              ),
              'authenticate' => array(
                  // TODO: acho que o passwordHasher devia ficar no ALL
@@ -70,7 +69,7 @@ public function beforeFilter() {
     //          Isso precisa ser feito para adicionar o primeiro usuário ao
     //          banco de dados. Mas não pode esquecer de, depois de criado esse
     //          primeiro usuário, remover o 'add'!!
-    $this->Auth->allow('login', 'add');
+    $this->Auth->allow('login', 'deslogado');
 }
 
 }
