@@ -28,7 +28,7 @@ class PostsController extends AppController {
 			$this->Session->setFlash(__('Unable to add your post.'));
 		}
 	}
-	
+
 	public function add2() {
 		if ($this->request->is('post')) {
 			$this->Post->create();
@@ -39,7 +39,7 @@ class PostsController extends AppController {
 			$this->Session->setFlash(__('Unable to add your post.'));
 		}
 	}
-	
+
 	public function edit($id = null) {
 		if (!$id) {throw new NotFoundException(__('Invalid post'));}
 		$post = $this->Post->findById($id);
@@ -55,12 +55,12 @@ class PostsController extends AppController {
 			}
 			$this->Session->setFlash(__('Unable to update your post.'));
 		}
-		
+
 		if (!$this->request->data) {
 			$this->request->data = $post;
 		}
-	}	
-	
+	}
+
 	public function delete($id) {
 		if ($this->request->is('get')) {
 			throw new MethodNotAllowedException();
@@ -73,13 +73,13 @@ class PostsController extends AppController {
 			return $this->redirect(array('action' => 'index'));
 		}
 	}
-	
+
 	public function view_pdf($id = null) {
 		$this->Post->id = $id;
 		if (!$this->Post->exists()) {
 			throw new NotFoundException(__('Invalid post'));
 		}
-		// increase memory limit in PHP 
+		// increase memory limit in PHP
 		ini_set('memory_limit', '512M');
 		$this->set('post', $this->Post->read(null, $id));
 	}
