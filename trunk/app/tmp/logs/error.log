@@ -4151,3 +4151,310 @@ Stack Trace:
 #3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-11-30 18:54:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:54:22 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Funcionarios\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Funcionarios\\index.ctp',
+)
+Request URL: /niac/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 18:54:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:54:37 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Funcionarios\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Funcionarios\\index.ctp',
+)
+Request URL: /niac/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 18:54:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:54:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:54:57 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Funcionarios\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Funcionarios\\index.ctp',
+)
+Request URL: /niac/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 18:54:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:58:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:58:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:58:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:58:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 18:58:31 Error: [MissingActionException] Action PostsController::add1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'add1',
+)
+Request URL: /niac/posts/add1
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 18:58:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:00:18 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\niac\app\View\Posts\add.ctp, line 17]
+2014-11-30 19:00:18 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /niac/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 19:00:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:00:42 Error: [MissingActionException] Action PostsController::add1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'add1',
+)
+Request URL: /niac/posts/add1
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 19:00:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:00:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:16 Error: [MissingActionException] Action PostsController::add1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'add1',
+)
+Request URL: /niac/posts/add1
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 19:01:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:27 Error: [MissingActionException] Action PostsController::add1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'add1',
+)
+Request URL: /niac/posts/add1
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-30 19:01:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:31 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\niac\app\View\Posts\add.ctp, line 17]
+2014-11-30 19:01:31 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /niac/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 19:01:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:01:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:02:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:02:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 19:02:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
