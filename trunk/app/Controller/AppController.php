@@ -19,7 +19,10 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Controller', 'Controller');
+App::uses(
+    'BlowfishPasswordHasher', 'Controller/Component/Auth', 'Controller',
+    'Controller'
+);
 
 /**
  * Application Controller
@@ -33,7 +36,39 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 public $components = array(
-    'DebugKit.Toolbar'
+    'DebugKit.Toolbar',
+    'Session',
+    'Auth' => array(
+             'authError' => 'Permissão negada.',
+             'loginAction' => '/funcionarios/login',
+             'loginRedirect' => array(
+                 'controller' => 'posts', // TODO: substituir por `casos'
+                 'action' => 'index'
+             ),
+             'logoutRedirect' => array(
+                 'controller' => 'pages', // TODO: garantir que isso vai pra
+                 'action' => 'display',   //       pagina de login
+                 'home'
+             ),
+             'authenticate' => array(
+                 'Form' => array(
+                     'passwordHasher' => 'Blowfish'
+                 )
+             )
+     )
 );
+
+public function beforeFilter() {
+    // ATENÇÃO: Para permitir temporariamente que uma pessoa não-autenticada
+    //          crie um usuário, adicione a string 'add' abaixo. Exemplo:
+    //
+    //              $this->Auth->allow('login', 'add');
+    //
+    //          Isso precisa ser feito para adicionar o primeiro usuário ao
+    //          banco de dados. Mas não pode esquecer de, depois de criado esse
+    //          primeiro usuário, remover a string!!
+    $this->Auth->allow('login', 'index', 'view', 'add1', 'add2', 'edit', 'add',
+                       'view_pdf', 'delete');
+}
 
 }
