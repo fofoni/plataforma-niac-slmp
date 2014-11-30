@@ -13,7 +13,7 @@ class Pessoa extends AppModel {
  */
 	public $primaryKey = 'idPessoa';
 
-	public $hasOne = array(
+    public $hasOne = array(
         'Funcionario' => array(
             'className' => 'Funcionario',
             'dependent' => true
@@ -26,6 +26,16 @@ class Pessoa extends AppModel {
  * @var array
  */
 	public $validate = array(
+		'nome' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Digite o nome.',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 		'dataNascimento' => array(
 			'date' => array(
 				'rule' => array('date'),
