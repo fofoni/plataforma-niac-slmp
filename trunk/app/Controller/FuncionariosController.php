@@ -34,6 +34,9 @@ class FuncionariosController extends AppController {
         $this->set('users', $this->paginate());
     }
 
+    public function deslogado() {
+    }
+
     public function view($id = null) {
         $this->Funcionario->id = $id;
         if (!$this->Funcionario->exists()) {
