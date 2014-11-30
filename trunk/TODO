@@ -16,7 +16,9 @@ antes de usar, é necessário:
 - ir em http://localhost/funcionarios/add -> deve aparecer um formulário para
   criar um funcionário novo.
   - criar um funcionário novo com permissões de administrador (supervisor) para
-    usá-lo enquanto faz testes.Falta fazer:
+    usá-lo enquanto faz testes.
+
+Falta fazer:
 
 - login (já está funcionando, mas faltam alguma correções)
   - adicionar a dataEntrada automaticamente
@@ -26,14 +28,13 @@ antes de usar, é necessário:
   - views, e interações entre usuários
   - garantir que funcionários de certas áreas só consigam visualizar o que lhes
     é permitido
-<<<<<<< .mine
-=======
+
 - logout
+
 - index de funcionários
+
 - adição de funcionários
 
-
->>>>>>> .r38
 - adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
   funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
   Custom Validation Rules
@@ -41,6 +42,7 @@ antes de usar, é necessário:
 - página index com as opções de cadastro
 
 - adicionar regras de validação para cadastro de casos
+
 - adição de geração de PDFs ao template do CAKE padrão(cláuvin tá fazendo)
 
 ===============================================================================
