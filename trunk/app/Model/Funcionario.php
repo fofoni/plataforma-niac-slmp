@@ -56,7 +56,7 @@ class Funcionario extends AppModel {
         'area' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'O campo \'área\' deve ser preenchido.',
+                'message' => 'Deve ser escolhida uma área.',
                 //'allowEmpty' => false,
                 //'required' => false,
                 //'last' => false, // Stop validation after this rule

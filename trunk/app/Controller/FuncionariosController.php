@@ -44,6 +44,7 @@ class FuncionariosController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
+
             $pessoa = array();
             $p_nome = $this->request->data['Pessoa']['nome'];
             $p_data = $this->request->data['Pessoa']['dataNascimento'];
@@ -61,22 +62,25 @@ class FuncionariosController extends AppController {
             if (isset($p_obs) && !empty($p_obs) && !is_null($p_obs) &&
                 trim($p_obs) !== '') { $pessoa['observacao'] = $p_obs; }
             $this->Pessoa->create();
-            $this->Pessoa->save($pessoa);
+            $p_save = $this->Pessoa->save($pessoa);
+            $p_id = $this->Pessoa->getLastInsertId();
+
             $this->Funcionario->create();
             // comantado, pq já está presente no beforeSave()
             //$this->Funcionario->set('dataEntrada', mktime());
-            $this->request->data['Funcionario']['pessoas_idPessoa'] =
-                $this->Pessoa->getLastInsertId();
-            debug($this->request->data);
-            if ($this->Funcionario->save($this->request->data)) {
+            $this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
+            $f_save = $this->Funcionario->save($this->request->data);
+
+            if ($p_save && $f_save) {
                 $this->Session->setFlash(
                     __('O novo funcionário foi adicionado!')
                 );
                 return $this->redirect(array('action' => 'index'));
             }
             $this->Session->setFlash(
-                __('The user could not be saved. Please, try again.')
+                __('Não foi possível adicionar o funcionário :\\')
             );
+
         }
     }
 

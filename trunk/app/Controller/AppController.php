@@ -20,8 +20,7 @@
  */
 
 App::uses(
-    'BlowfishPasswordHasher', 'Controller/Component/Auth', 'Controller',
-    'Controller'
+    'BlowfishPasswordHasher', 'Controller/Component/Auth', 'Controller'
 );
 
 /**
@@ -41,18 +40,22 @@ public $components = array(
     'Auth' => array(
              'authError' => 'Permissão negada.',
              'loginAction' => '/funcionarios/login',
-             'loginRedirect' => array(
+             'loginRedirect' => array( // pra onde ir assim que logar?
                  'controller' => 'posts', // TODO: substituir por `casos'
                  'action' => 'index'
              ),
-             'logoutRedirect' => array(
+             'logoutRedirect' => array( // pra onde ir assim que deslogar?
                  'controller' => 'pages', // TODO: garantir que isso vai pra
                  'action' => 'display',   //       pagina de login
                  'home'
              ),
              'authenticate' => array(
+                 // TODO: acho que o passwordHasher devia ficar no ALL
+                 // comentado abaixo pq não tá funcionando
+                 //AuthComponent::ALL => array('userModel' => 'Funcionario'),
                  'Form' => array(
-                     'passwordHasher' => 'Blowfish'
+                     'passwordHasher' => 'Blowfish',
+                     'userModel' => 'Funcionario'
                  )
              )
      )
@@ -66,13 +69,8 @@ public function beforeFilter() {
     //
     //          Isso precisa ser feito para adicionar o primeiro usuário ao
     //          banco de dados. Mas não pode esquecer de, depois de criado esse
-    //          primeiro usuário, remover a string!!
-    // na verdade, esse comentário acima ainda não é válido, porque não dá pra
-    // fazer login; ou seja, ainda estamos na fase em que pessoas
-    // não-autenticadas pode fazer tudo.
-//     $this->Auth->allow('login');
-    $this->Auth->allow('login', 'index', 'view', 'edit', 'add', 'display',
-                       'view_pdf', 'delete');
+    //          primeiro usuário, remover o 'add'!!
+    $this->Auth->allow('login');
 }
 
 }
