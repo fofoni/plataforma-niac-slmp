@@ -4,7 +4,7 @@
 <h1>Blog posts</h1>
 <?php echo $this->Html->link(
 	'Adicionar Post',
-	array('controller' => 'posts', 'action' => 'add1')
+	array('controller' => 'posts', 'action' => 'add')
 ); ?>
 <table>
 	<tr>
