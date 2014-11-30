@@ -1,5 +1,7 @@
 Falta fazer:
 
 - login (fonini tá fazendo)
+  - no View Funcionarios/login.ctp, tem que dar um jeito de fazer o Form gerar
+    inputs pra campos de mais de um model ao mesmo tempo.
 - todo o resto (à medida que quem for lembrando de passos específicos,
   vai adicionando aqui)
