@@ -72,7 +72,7 @@ class Funcionario extends AppModel {
                 $this->data[$this->alias]['password']
             );
         }
-        $this->data[$this->alias]['dataEntrada'] = mktime();
+        $this->data[$this->alias]['dataEntrada'] = Date();
         return true;
     }
 
