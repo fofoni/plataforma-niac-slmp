@@ -67,6 +67,9 @@ public function beforeFilter() {
     //          Isso precisa ser feito para adicionar o primeiro usuário ao
     //          banco de dados. Mas não pode esquecer de, depois de criado esse
     //          primeiro usuário, remover a string!!
+    // na verdade, esse comentário acima ainda não é válido, porque não dá pra
+    // fazer login; ou seja, ainda estamos na fase em que pessoas
+    // não-autenticadas pode fazer tudo.
 //     $this->Auth->allow('login');
     $this->Auth->allow('login', 'index', 'view', 'add1', 'add2', 'edit', 'add',
                        'view_pdf', 'delete');
