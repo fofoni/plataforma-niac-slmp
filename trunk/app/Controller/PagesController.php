@@ -38,7 +38,7 @@ class PagesController extends AppController {
 	public $uses = array();
 
 	public function index() {
-        return $this->redirect(array('action' => 'home'));
+        //return $this->redirect(array('action' => 'home'));
 	}
 
 /**
