@@ -3958,3 +3958,196 @@ Request URL: /niac/css/decoracao.css
 Stack Trace:
 #0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-11-30 00:40:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:40:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:40:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:40:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:40:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:41:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 00:42:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 01:07:19 Error: Fatal Error (4): syntax error, unexpected '[', expecting function (T_FUNCTION) in [C:\xampp\htdocs\niac\app\Controller\PostsController.php, line 3]
+2014-11-30 01:07:19 Error: [FatalErrorException] syntax error, unexpected '[', expecting function (T_FUNCTION)
+Request URL: /niac/posts/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 01:07:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 01:07:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 01:07:36 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Posts\pdf\view_pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Posts\\pdf\\view_pdf.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 01:08:14 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Posts\pdf\view_pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Posts\\pdf\\view_pdf.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 01:08:16 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Posts\pdf\view_pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Posts\\pdf\\view_pdf.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 01:08:17 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Posts\pdf\view_pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Posts\\pdf\\view_pdf.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 01:08:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-30 01:08:20 Error: [MissingViewException] View file "C:\xampp\htdocs\niac\app\View\Posts\pdf\view_pdf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Posts\\pdf\\view_pdf.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-30 01:09:40 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\niac\app\View\Layouts\pdf\default.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\niac\\app\\View\\Layouts\\pdf\\default.ctp',
+)
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\View\View.php(510): View->_getLayoutFileName('default')
+#1 C:\xampp\htdocs\niac\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#2 C:\xampp\htdocs\niac\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 C:\xampp\htdocs\niac\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-30 01:10:09 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:/xampp/htdocs/niac/app/Vendor/dompdf/lib/php-font-lib/classes/Font.php' (include_path='C:\xampp\htdocs\niac\lib;.;C:\xampp\php\PEAR') in [C:\xampp\htdocs\niac\app\Vendor\dompdf\dompdf_config.inc.php, line 332]
+2014-11-30 01:10:09 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:/xampp/htdocs/niac/app/Vendor/dompdf/lib/php-font-lib/classes/Font.php' (include_path='C:\xampp\htdocs\niac\lib;.;C:\xampp\php\PEAR')
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332, Array)
+#2 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332, Array)
+#3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-30 01:14:16 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:/xampp/htdocs/niac/app/Vendor/dompdf/lib/php-font-lib/classes/Font.php' (include_path='C:\xampp\htdocs\niac\lib;.;C:\xampp\php\PEAR') in [C:\xampp\htdocs\niac\app\Vendor\dompdf\dompdf_config.inc.php, line 332]
+2014-11-30 01:14:16 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:/xampp/htdocs/niac/app/Vendor/dompdf/lib/php-font-lib/classes/Font.php' (include_path='C:\xampp\htdocs\niac\lib;.;C:\xampp\php\PEAR')
+Request URL: /niac/posts/view_pdf/1.pdf
+Stack Trace:
+#0 C:\xampp\htdocs\niac\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332, Array)
+#2 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\\xampp\\htdocs...', 332, Array)
+#3 C:\xampp\htdocs\niac\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
