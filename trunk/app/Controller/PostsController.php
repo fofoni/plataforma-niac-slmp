@@ -1,6 +1,7 @@
 <?php
 class PostsController extends AppController {
 	public $helpers = array('Html', 'Form');
+	public $components = array('RequestHandler');
 
 	public function index() {
 		$this->set('posts', $this->Post->find('all'));
@@ -72,4 +73,15 @@ class PostsController extends AppController {
 			return $this->redirect(array('action' => 'index'));
 		}
 	}
+	
+	public function view_pdf($id = null) {
+		$this->Post->id = $id;
+		if (!$this->Post->exists()) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+		// increase memory limit in PHP 
+		ini_set('memory_limit', '512M');
+		$this->set('post', $this->Post->read(null, $id));
+	}
+
 }
