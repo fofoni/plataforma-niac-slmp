@@ -69,7 +69,7 @@ class FuncionariosController extends AppController {
             $p_id = $this->Pessoa->getLastInsertId();
 
             $this->Funcionario->create();
-            // comantado, pq já está presente no beforeSave()
+            // comentado, pq já está presente no beforeSave()
             //$this->Funcionario->set('dataEntrada', mktime());
             $this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
             $f_save = $this->Funcionario->save($this->request->data);
