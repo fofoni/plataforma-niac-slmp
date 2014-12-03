@@ -20,6 +20,9 @@ antes de usar, é necessário:
 
 Falta fazer:
 
+- remover o modelo e a tabela de Pessoas, e deixar os funcionários e clients
+  como modelos independentes. Procurar no google por 'cake model inheritance'.
+
 - login (já está funcionando, mas faltam alguma correções)
   - adicionar a dataEntrada automaticamente
   - corrigir erro na hora de fazer o login (ele não aceita usuário e senha)
@@ -28,14 +31,12 @@ Falta fazer:
   - views, e interações entre usuários
   - garantir que funcionários de certas áreas só consigam visualizar o que lhes
     é permitido
-	
+
 - avisar pro NIAC que a imagem deles tem erros de português.
-<<<<<<< .mine
-=======- logout
+
+- logout
 
 - index de funcionários
-
-- adição de funcionários
 
 - adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
   funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
