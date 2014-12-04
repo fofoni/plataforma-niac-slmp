@@ -18,6 +18,8 @@ antes de usar, é necessário:
   - criar um funcionário novo com permissões de administrador (supervisor) para
     usá-lo enquanto faz testes.
 
+===============================================================================
+
 Falta fazer:
 
 - remover o modelo e a tabela de Pessoas, e deixar os funcionários e clients
@@ -32,13 +34,9 @@ Falta fazer:
   - garantir que funcionários de certas áreas só consigam visualizar o que lhes
     é permitido
 
-
-
 - logout
 
 - index de funcionários
-
-
 
 - página index com as opções de cadastro
 
