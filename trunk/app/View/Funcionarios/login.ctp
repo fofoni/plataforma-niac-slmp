@@ -6,9 +6,14 @@
             <?php echo __('Digite o nome de usuário e senha.'); ?>
         </legend>
         <?php
-            echo $this->Form->input('username');
-            echo $this->Form->input('password');
+            echo $this->Form->input('username', array(
+                'label' => 'Nome de usuário'
+            ));
+            echo $this->Form->input('password', array(
+                'label' => 'Senha'
+            ));
         ?>
     </fieldset>
 <?php echo $this->Form->end(__('Entrar')); ?>
 </div>
+
