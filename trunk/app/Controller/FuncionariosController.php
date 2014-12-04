@@ -72,10 +72,11 @@ class FuncionariosController extends AppController {
             // comentado, pq já está presente no beforeSave()
             //$this->Funcionario->set('dataEntrada', mktime());
             //$this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
-	    $f_nome = $this->request->data['Funcionario']['nome'];
+/*	    $f_nome = $this->request->data['Funcionario']['nome'];
             $f_data = $this->request->data['Funcionario']['dataNascimento'];
             $f_mail= $this->request->data['Funcionario']['email'];
             $f_tel= $this->request->data['Funcionario']['telefone'];
+*/
             $f_save = $this->Funcionario->save($this->request->data);
 
             if ($f_save) {

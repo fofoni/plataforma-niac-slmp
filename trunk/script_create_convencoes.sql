@@ -31,7 +31,7 @@ CREATE TABLE casos (
 -- ATENÇÃO: 'username' e 'password' são convenções do Cake
 -- NÃO pode substituir por português
 CREATE TABLE funcionarios (
-  id INTEGER NOT NULL,
+  id INTEGER NOT NULL AUTO_INCREMENT,
   nome TINYTEXT NOT NULL,
   dataNascimento DATE NOT NULL,
   cpf TINYTEXT,
@@ -57,7 +57,7 @@ CREATE TABLE funcionarios (
 -- );
 
 CREATE TABLE clientes (
-  id INTEGER NOT NULL,
+  id INTEGER NOT NULL AUTO_INCREMENT,
   nome TINYTEXT NOT NULL,
   dataNascimento DATE NOT NULL,
   cpf TINYTEXT,
@@ -68,7 +68,7 @@ CREATE TABLE clientes (
   cor TINYTEXT,
   genero TINYTEXT,
   nomeSocial TINYTEXT,
-  estadoCivil ENUM('solteiro', 'casado', 'divorciado', 'viuvo'),
+  estadoCivil ENUM('solteiro', 'casado', 'divorciado', 'separado', 'viuvo'),
   dataCadastro DATE NULL,
   PRIMARY KEY(id)
 );
