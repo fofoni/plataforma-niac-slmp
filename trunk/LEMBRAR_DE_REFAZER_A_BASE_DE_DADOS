@@ -1,0 +1,12 @@
+Sempre que você der 'svn update', o svn te dá uma lista de arquivos marcados
+como 'updated' (com uma letra U no início). Exemplo:
+
+    Atualizando '.':
+    A    app/View/Funcionarios/index2.ctp
+    U    app/View/Pages/index.ctp
+    Atualizado para revisão 55.
+
+Nesse exemplo, o arquivo index2.ctp foi adicionado, e o index.ctp foi
+'updated'. Sempre verifique se o arquivo script_create_convencoes.sql foi
+marcado como 'updated'. Se foi, você precisa aplicar as modificações ao
+seu banco de dados. Por exemplo, deletar uma tabela e criá-la novamente.

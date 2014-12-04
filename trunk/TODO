@@ -22,19 +22,6 @@ antes de usar, é necessário:
 
 Falta fazer:
 
-
-
-- login (já está funcionando, mas faltam alguma correções)
-  - adicionar a dataEntrada automaticamente (já)
-  - corrigir erro na hora de fazer o login (ele não aceita usuário e senha) (já)
-  - garantir que quando ele não consegue fazer o Funcionário mas conseguiu fazer
-    a pessoa correspondente, ele deleta a Pessoa recém criada.
-  - views, e interações entre usuários
-  - garantir que funcionários de certas áreas só consigam visualizar o que lhes
-    é permitido
-
-
-
 - index de funcionários
 
 - página index com as opções de cadastro
@@ -43,7 +30,7 @@ Falta fazer:
 
 - adição de geração de PDFs ao template do CAKE padrão(cláuvin tá fazendo)
 
--Criação de diferentes níveis de permissão para os usuários.
+- Criação de diferentes níveis de permissão para os usuários.
 
 ===============================================================================
 
@@ -61,3 +48,4 @@ Já feito:
 
  - remover o modelo e a tabela de Pessoas, e deixar os funcionários e clients
   como modelos independentes. Procurar no google por 'cake model inheritance'. (feito)
+
