@@ -9,6 +9,12 @@
             echo $this->Form->input('dataNascimento', array(
                 'label' => 'Data de nascimento'
             ));
+	    echo $this->Form->input('cpf', array(
+               	'label' => 'CPF'
+            ));
+            echo $this->Form->input('rg', array(
+               	'label' => 'RG'
+            ));
             echo $this->Form->input('email', array(
                 'label' => 'E-mail',
                 'type' => 'email'
