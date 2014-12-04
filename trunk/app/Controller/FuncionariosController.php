@@ -49,32 +49,7 @@ class FuncionariosController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
 
-/*            $pessoa = array();
-            $p_nome = $this->request->data['Pessoa']['nome'];
-            $p_data = $this->request->data['Pessoa']['dataNascimento'];
-            $p_mail= $this->request->data['Pessoa']['email'];
-            $p_tel= $this->request->data['Pessoa']['telefone'];
-            $p_obs= $this->request->data['Pessoa']['observacao'];
-            if (isset($p_nome) && !empty($p_nome) && !is_null($p_nome) &&
-                trim($p_nome) !== '') { $pessoa['nome'] = $p_nome; }
-            if (isset($p_data) && !empty($p_data) && !is_null($p_data))
-                { $pessoa['dataNascimento'] = $p_data; }
-            if (isset($p_mail) && !empty($p_mail) && !is_null($p_mail) &&
-                trim($p_mail) !== '') { $pessoa['email'] = $p_mail; }
-            if (isset($p_tel) && !empty($p_tel) && !is_null($p_tel) &&
-                trim($p_tel) !== '') { $pessoa['telefone'] = $p_tel; }
-            if (isset($p_obs) && !empty($p_obs) && !is_null($p_obs) &&
-                trim($p_obs) !== '') { $pessoa['observacao'] = $p_obs; }
-            $this->Pessoa->create();
-            $p_save = $this->Pessoa->save($pessoa);
-            $p_id = $this->Pessoa->getLastInsertId();
-*/
-
             $this->Funcionario->create();
-            // comentado, pq já está presente no beforeSave()
-            //$this->Funcionario->set('dataEntrada', mktime());
-            //$this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
-
             $f_save = $this->Funcionario->save($this->request->data);
 
             if ($f_save) {

@@ -57,4 +57,9 @@ class Cliente extends AppModel {
 		),
    );
 
+    public function beforeSave($options = array()) {
+        $this->data[$this->alias]['dataCadastro'] = Date('c');
+        return true;
+    }
+
 }
