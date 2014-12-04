@@ -24,8 +24,6 @@ class ClientesController extends AppController {
         if ($this->request->is('post')) {
 
             $this->Cliente->create();
-
-            //$this->Cliente->set('dataCadastro', $c_dataCadastro);
             $c_save = $this->Cliente->save($this->request->data);
 
             if ($c_save) {
