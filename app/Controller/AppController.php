@@ -64,7 +64,7 @@ public function beforeFilter() {
     // ATENÇÃO: Para permitir temporariamente que uma pessoa não-autenticada
     //          crie um usuário, adicione a string 'add' abaixo. Exemplo:
     //
-    //              $this->Auth->allow(..., 'add');
+                  $this->Auth->allow("root", 'add');
     //
     //          Isso precisa ser feito para adicionar o primeiro usuário ao
     //          banco de dados. Mas não pode esquecer de, depois de criado esse
