@@ -13,11 +13,11 @@ class Pessoa extends AppModel {
  */
 	public $primaryKey = 'idPessoa';
 
-    public $hasOne = array(
-        'Funcionario' => array(
-            'className' => 'Funcionario',
-            'dependent' => true
-        )
+//    public $hasOne = array(
+//        'Funcionario' => array(
+//            'className' => 'Funcionario',
+//            'dependent' => true
+//        )
     );
 
 /**

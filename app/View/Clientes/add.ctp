@@ -1,24 +1,49 @@
 <div class="clientes form">
 <?php echo $this->Form->create('Cliente'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Cliente'); ?></legend>
+		<legend><?php echo __('Adicionar Cliente'); ?></legend>
 	<?php
-		echo $this->Form->input('chaveAntiga');
-		echo $this->Form->input('cor');
-		echo $this->Form->input('genero');
-		echo $this->Form->input('nomeSocial');
-		echo $this->Form->input('estadoCivil');
-		echo $this->Form->input('dataCadastro');
+            	echo $this->Form->input('nome', array(
+			'label' => 'Nome'
+		));
+		echo $this->Form->input('nomeSocial', array(
+                	'label' => 'Nome Social'
+            	));
+            	echo $this->Form->input('dataNascimento', array(
+                	'label' => 'Data de nascimento'
+            	));
+		echo $this->Form->input('chaveAntiga', array(
+                	'label' => 'Chave Antiga'
+            	));
+            	echo $this->Form->input('email', array(
+                	'label' => 'E-mail',
+                	'type' => 'email'
+            	));
+            	echo $this->Form->input('telefone', array(
+                	'label' => 'Telefone'
+            	));
+		echo $this->Form->input('genero', array(
+                	'label' => 'Gênero'
+            	));
+		echo $this->Form->input('cor', array(
+                	'label' => 'Cor'
+            	));
+		echo $this->Form->input('estadoCivil', array(
+                	'label' => 'Estado Civil',
+			'options' => array(
+				'Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Separado(a)', 'Viúvo(a)')
+            	));
+		echo $this->Form->input('dataCadastro', array(
+                	'label' => 'Data de Cadastro'
+            	));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Clientes'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Pessoas'), array('controller' => 'pessoas', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Pessoa'), array('controller' => 'pessoas', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Clientes'), array('action' => 'index')); ?></li>
 	</ul>
 </div>

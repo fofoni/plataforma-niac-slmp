@@ -14,14 +14,7 @@ class Funcionario extends AppModel {
  *
  * @var string
  */
-	public $primaryKey = 'pessoas_idPessoa';
-
-    public $belongsTo = array(
-        'Pessoa' => array(
-            'className' => 'Pessoa',
-            'foreignKey' => 'pessoas_idPessoa'
-        )
-    );
+	public $primaryKey = 'id';
 
 /**
  * Validation rules
@@ -29,6 +22,26 @@ class Funcionario extends AppModel {
  * @var array
  */
     public $validate = array(
+		'nome' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Digite o nome.',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'dataNascimento' => array(
+			'date' => array(
+				'rule' => array('date'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
         'username' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
@@ -72,7 +85,7 @@ class Funcionario extends AppModel {
                 $this->data[$this->alias]['password']
             );
         }
-        $this->data[$this->alias]['dataEntrada'] = Date();
+        $this->data[$this->alias]['dataEntrada'] = Date('c');
         return true;
     }
 
