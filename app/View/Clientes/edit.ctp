@@ -1,57 +1,24 @@
 <div class="clientes form">
 <?php echo $this->Form->create('Cliente'); ?>
 	<fieldset>
-		<legend><?php echo __('Editar Cliente'); ?></legend>
+		<legend><?php echo __('Edit Cliente'); ?></legend>
 	<?php
-		echo $this->Form->input('Cliente.id');
-            	echo $this->Form->input('nome', array(
-			'label' => 'Nome'
-		));
-		echo $this->Form->input('nomeSocial', array(
-                	'label' => 'Nome Social'
-            	));
-            	echo $this->Form->input('dataNascimento', array(
-                	'label' => 'Data de nascimento'
-            	));
-            	echo $this->Form->input('cpf', array(
-                	'label' => 'CPF'
-            	));
-            	echo $this->Form->input('rg', array(
-                	'label' => 'RG'
-            	));
-		echo $this->Form->input('chaveAntiga', array(
-                	'label' => 'Chave Antiga'
-            	));
-            	echo $this->Form->input('email', array(
-                	'label' => 'E-mail',
-                	'type' => 'email'
-            	));
-            	echo $this->Form->input('telefone', array(
-                	'label' => 'Telefone'
-            	));
-		echo $this->Form->input('genero', array(
-                	'label' => 'Gênero'
-            	));
-		echo $this->Form->input('cor', array(
-                	'label' => 'Cor'
-            	));
-		echo $this->Form->input('estadoCivil', array(
-                	'label' => 'Estado Civil',
-			'options' => array(
-				'Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Separado(a)', 'Viúvo(a)')
-            	));
-		echo $this->Form->input('dataCadastro', array(
-                	'label' => 'Data de Cadastro'
-            	));
+		echo $this->Form->input('id');
+		echo $this->Form->input('chaveAntiga');
+		echo $this->Form->input('cor');
+		echo $this->Form->input('genero');
+		echo $this->Form->input('nomeSocial');
+		echo $this->Form->input('estadoCivil');
+		echo $this->Form->input('dataCadastro');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Enviar')); ?>
+<?php echo $this->Form->end(__('Submit')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Ações'); ?></h3>
+	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Cliente.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Cliente.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('Listar Clientes'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Clientes'), array('action' => 'index')); ?></li>
 	</ul>
 </div>
