@@ -11,13 +11,34 @@ class Cliente extends AppModel {
  *
  * @var string
  */
-	public $primaryKey = 'pessoas_idPessoa';
+	public $primaryKey = 'id';
 
-    public $belongsTo = array(
-        'Pessoa' => array(
-            'className' => 'Pessoa',
-            'foreignKey' => 'pessoas_idPessoa'
-        )
-    );
+/**
+ * Validation rules
+ *
+ * @var array
+ */
+    public $validate = array(
+		'nome' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Digite o nome.',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'dataNascimento' => array(
+			'date' => array(
+				'rule' => array('date'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+   );
 
 }

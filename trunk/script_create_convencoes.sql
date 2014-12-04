@@ -46,7 +46,7 @@ CREATE TABLE funcionarios (
   dataEntrada DATE NULL,
   dataSaida DATE NULL,
   PRIMARY KEY(id),
-  UNIQUE(username),
+  UNIQUE(username)
 );
 
 -- CREATE TABLE users (
@@ -70,7 +70,7 @@ CREATE TABLE clientes (
   nomeSocial TINYTEXT,
   estadoCivil ENUM('solteiro', 'casado', 'divorciado', 'viuvo'),
   dataCadastro DATE NULL,
-  PRIMARY KEY(id),
+  PRIMARY KEY(id)
 );
 
 CREATE TABLE acompanhamentos (

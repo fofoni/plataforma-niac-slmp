@@ -7,8 +7,7 @@ App::uses('AppController', 'Controller');
 class FuncionariosController extends AppController {
 
     public $uses = array(
-        'Funcionario',
-        'Pessoa'
+        'Funcionario'
     );
 
     public function beforeFilter() {
@@ -48,7 +47,7 @@ class FuncionariosController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
 
-            $pessoa = array();
+/*            $pessoa = array();
             $p_nome = $this->request->data['Pessoa']['nome'];
             $p_data = $this->request->data['Pessoa']['dataNascimento'];
             $p_mail= $this->request->data['Pessoa']['email'];
@@ -67,14 +66,19 @@ class FuncionariosController extends AppController {
             $this->Pessoa->create();
             $p_save = $this->Pessoa->save($pessoa);
             $p_id = $this->Pessoa->getLastInsertId();
+*/
 
             $this->Funcionario->create();
             // comentado, pq já está presente no beforeSave()
             //$this->Funcionario->set('dataEntrada', mktime());
-            $this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
+            //$this->request->data['Funcionario']['pessoas_idPessoa'] = $p_id;
+	    $f_nome = $this->request->data['Funcionario']['nome'];
+            $f_data = $this->request->data['Funcionario']['dataNascimento'];
+            $f_mail= $this->request->data['Funcionario']['email'];
+            $f_tel= $this->request->data['Funcionario']['telefone'];
             $f_save = $this->Funcionario->save($this->request->data);
 
-            if ($p_save && $f_save) {
+            if ($f_save) {
                 $this->Session->setFlash(
                     __('O novo funcionário foi adicionado!')
                 );
