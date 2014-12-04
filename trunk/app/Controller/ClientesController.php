@@ -11,9 +11,7 @@ class ClientesController extends AppController {
     );
 
     public function view($id = null) {
-	//$this->log('This message goes to CakePHPs error.log file.');
-        //$this->Cliente->id = (int)$id;
-	$this->Cliente->id = 0;
+        $this->Cliente->id = (int)$id;
         if ($this->Cliente->exists()) {
             $this->set('cliente', $this->Cliente->read(null, $id));
         }
