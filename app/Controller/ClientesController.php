@@ -11,8 +11,9 @@ class ClientesController extends AppController {
     );
 
     public function view($id = null) {
-	$this->log('This message goes to CakePHPs error.log file.');
-        $this->Cliente->id = (int)$id;
+	//$this->log('This message goes to CakePHPs error.log file.');
+        //$this->Cliente->id = (int)$id;
+	$this->Cliente->id = 0;
         if ($this->Cliente->exists()) {
             $this->set('cliente', $this->Cliente->read(null, $id));
         }
@@ -25,7 +26,7 @@ class ClientesController extends AppController {
         if ($this->request->is('post')) {
 
             $this->Cliente->create();
-	    $c_nome = $this->request->data['Cliente']['nome'];
+	    /*$c_nome = $this->request->data['Cliente']['nome'];
             $c_data = $this->request->data['Cliente']['dataNascimento'];
             $c_mail= $this->request->data['Cliente']['email'];
             $c_tel= $this->request->data['Cliente']['telefone'];
@@ -34,7 +35,7 @@ class ClientesController extends AppController {
 	    $c_cor = $this->request->data['Cliente']['cor'];
 	    $c_genero = $this->request->data['Cliente']['genero'];
 	    $c_nomeSocial = $this->request->data['Cliente']['nomeSocial'];
-	    $c_estadoCivil = $this->request->data['Cliente']['estadoCivil'];
+	    $c_estadoCivil = $this->request->data['Cliente']['estadoCivil'];*/
             //$this->Cliente->set('dataCadastro', $c_dataCadastro);
             $c_save = $this->Cliente->save($this->request->data);
 
