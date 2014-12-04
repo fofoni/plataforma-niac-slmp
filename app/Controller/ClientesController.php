@@ -24,6 +24,8 @@ class ClientesController extends AppController {
         if ($this->request->is('post')) {
 
             $this->Cliente->create();
+
+            //$this->Cliente->set('dataCadastro', $c_dataCadastro);
             $c_save = $this->Cliente->save($this->request->data);
 
             if ($c_save) {
@@ -35,8 +37,34 @@ class ClientesController extends AppController {
             $this->Session->setFlash(
                 __('Não foi possível adicionar o cliente :\\')
             );
-
         }
+    }
+
+    public function search() {
+	//Não está pronto!
+        //$this->set('results',$this->Cliente->search($this->data['Cliente']['cpf'])); 
+	$chave=intval($this->data['Cliente']['chaveAntiga']);
+	$nome=$this->data['Cliente']['nomeSocial'];
+	$cpf=$this->data['Cliente']['cpf'];
+//	$antiga=$this->data
+	if ($chave!=null) {
+		if ($antiga==true) {
+		$this->Cliente->id = $chave;
+			if ($this->Cliente->exists()) {
+				$this->redirect(array('action'=>'view', $this->Cliente->id));
+			}
+		}
+		else {
+			//$this->Cliente->id = null;
+			$this->Cliente->chaveAntiga = $chave;
+			if ($this->Cliente->exists()) {
+				$this->redirect(array('action'=>'view', $this->Cliente->id));
+			}
+			else {
+		        	throw new NotFoundException(__('Cliente não existe.'));
+			}
+		}
+	}
     }
 
     public function edit($id = null) {
