@@ -6,20 +6,13 @@
 	'Casos',
 	array('controller' => 'casos', 'action' => 'index')
 ); ?>
-<br>
-<?php echo $this->Html->link(
-	'Clientes',
-	array('controller' => 'clientes', 'action' => 'index')
-); ?>
-<br>
-<?php echo $this->Html->link(
-	'Funcionarios',
-	array('controller' => 'funcionarios', 'action' => 'index')
-); ?>
-<br>
+<h1>Acompanhamentos</h1>
+<h1>Clientes</h1>
+<h1>Escolaridades</h1>
+<h1>Famílias</h1>
+<h1>Moradias</h1>
+<h1>Pessoas</h1>
+<h1>Rendas</h1>
+<h1>Saúdes</h1>
 <h1>Turnos das Pessoas</h1>
-<br>
-<br>
-<?php echo $this->Html->link('Logout',
-					array('controller' => 'funcionarios',
-						  'action' => 'logout')); ?>
+</table>
