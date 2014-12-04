@@ -1,4 +1,4 @@
-<!-- File: /app/View/Posts/index.ctp 
+﻿<!-- File: /app/View/Funcionarios/index.ctp 
 (edit links added) -->
 
 <h1>Acesso a tabelas</h1>
@@ -18,13 +18,8 @@
 ); ?>
 <br>
 <h1>Turnos das Pessoas</h1>
-<?php echo $this->Html->link(
-	'Posts(aquela versao simples com exportação de pdf)',
-	array('controller' => 'posts', 'action' => 'index')
-); ?>
 <br>
 <br>
 <?php echo $this->Html->link('Logout',
 					array('controller' => 'funcionarios',
 						  'action' => 'logout')); ?>
-</table>
