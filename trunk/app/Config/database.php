@@ -68,7 +68,7 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
+		'login' => 'niac',
 		'password' => 'niac',
 		'database' => 'niac',
 		'prefix' => '',
