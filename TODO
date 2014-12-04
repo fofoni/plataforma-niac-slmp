@@ -38,9 +38,7 @@ Falta fazer:
 
 - index de funcionários
 
-- adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
-  funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
-  Custom Validation Rules
+
 
 - página index com as opções de cadastro
 
@@ -56,3 +54,6 @@ Já feito:
 - Exportação de view do posts pra PDF(cláuvin fez)
 - cadastro de casos (cláuvin fez)
 - avisar pro NIAC que a imagem deles tem erros de português.(cláuvin fez)
+- adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
+  funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
+  Custom Validation Rules(cláuvin fez)
