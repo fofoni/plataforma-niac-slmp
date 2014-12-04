@@ -34,6 +34,8 @@ class FuncionariosController extends AppController {
     }
 
     public function deslogado() {
+        if ($this->Auth->user())
+            return $this->redirect('/');
     }
 
     public function view($id = null) {
