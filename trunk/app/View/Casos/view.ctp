@@ -40,11 +40,13 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Caso'), array('action' => 'edit', $caso['Caso']['idCaso'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Caso'), array('action' => 'delete', $caso['Caso']['idCaso']), array(), __('Are you sure you want to delete # %s?', $caso['Caso']['idCaso'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Casos'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Caso'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Caso'), array('action' => 'edit', $caso['Caso']['idCaso'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Deletar Caso'), array('action' => 'delete', $caso['Caso']['idCaso']), array(), __('Are you sure you want to delete # %s?', $caso['Caso']['idCaso'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Casos'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Novo Caso'), array('action' => 'add')); ?> </li>
+		<br>
+		<li><?php echo $this->Html->link(__('Criar PDF'), array('action' => 'view_pdf', 'ext' => 'pdf', $caso['Caso']['idCaso'])); ?></p>
 	</ul>
 </div>
