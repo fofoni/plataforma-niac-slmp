@@ -11,6 +11,6 @@ class Caso extends AppModel {
  *
  * @var string
  */
-	public $primaryKey = 'idCaso';
+	public $primaryKey = 'id';
 
 }

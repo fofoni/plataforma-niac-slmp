@@ -2,8 +2,8 @@
 
 <h2><?php echo __('Caso'); ?></h2>
 
-<h3><?php echo __('IdCaso = ');
-          echo h($caso['Caso']['idCaso']);
+<h3><?php echo __('Id = ');
+          echo h($caso['Caso']['id']);
 		  echo __('<br>');
 		  echo __('ChaveAntiga = ');
 		  echo h($caso['Caso']['chaveAntiga']);
