@@ -1,4 +1,4 @@
-﻿ATENÇÃO:
+ATENÇÃO:
 antes de usar, é necessário:
 - instalar Apache/MySQL/PHP
 - no MySQL:
@@ -40,8 +40,6 @@ Falta fazer:
 - ao adicionar um cliente, o formulario da a opcao de datas de nascimento
   somente ate 20 anos atras (e tambem varios anos a frente...)
 
-- Adaptar o idCasos para id
-
 ===============================================================================
 
 
@@ -59,3 +57,4 @@ Já feito:
  - remover o modelo e a tabela de Pessoas, e deixar os funcionários e clients
   como modelos independentes. Procurar no google por 'cake model inheritance'. (feito)
 
+  - PDF no casos

@@ -3,7 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('idCaso'); ?></th>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('chaveAntiga'); ?></th>
 			<th><?php echo $this->Paginator->sort('demanda'); ?></th>
 			<th><?php echo $this->Paginator->sort('dataAbertura'); ?></th>
@@ -16,7 +16,7 @@
 	<tbody>
 	<?php foreach ($casos as $caso): ?>
 	<tr>
-		<td><?php echo h($caso['Caso']['idCaso']); ?>&nbsp;</td>
+		<td><?php echo h($caso['Caso']['id']); ?>&nbsp;</td>
 		<td><?php echo h($caso['Caso']['chaveAntiga']); ?>&nbsp;</td>
 		<td><?php echo h($caso['Caso']['demanda']); ?>&nbsp;</td>
 		<td><?php echo h($caso['Caso']['dataAbertura']); ?>&nbsp;</td>
@@ -24,9 +24,9 @@
 		<td><?php echo h($caso['Caso']['permissaoPesquisa']); ?>&nbsp;</td>
 		<td><?php echo h($caso['Caso']['observacao']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $caso['Caso']['idCaso'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $caso['Caso']['idCaso'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $caso['Caso']['idCaso']), array(), __('Are you sure you want to delete # %s?', $caso['Caso']['idCaso'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $caso['Caso']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $caso['Caso']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $caso['Caso']['id']), array(), __('Are you sure you want to delete # %s?', $caso['Caso']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
