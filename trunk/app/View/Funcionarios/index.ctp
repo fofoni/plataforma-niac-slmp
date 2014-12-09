@@ -1,5 +1,5 @@
 <div class="funcionarios index">
-	<h2><?php echo __('Funcionarios'); ?></h2>
+	<h2><?php echo __('Funcionários'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -11,7 +11,6 @@
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
 			<th><?php echo $this->Paginator->sort('telefone'); ?></th>
 			<th><?php echo $this->Paginator->sort('username'); ?></th>
-			<th><?php echo $this->Paginator->sort('password'); ?></th>
 			<th><?php echo $this->Paginator->sort('supervisor'); ?></th>
 			<th><?php echo $this->Paginator->sort('ativo'); ?></th>
 			<th><?php echo $this->Paginator->sort('area'); ?></th>
@@ -31,7 +30,6 @@
 		<td><?php echo h($funcionario['Funcionario']['email']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['telefone']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['username']); ?>&nbsp;</td>
-		<td><?php echo h($funcionario['Funcionario']['password']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['supervisor']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['ativo']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['area']); ?>&nbsp;</td>
@@ -63,6 +61,6 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Funcionario'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Novo Funcionário'), array('action' => 'add')); ?></li>
 	</ul>
 </div>
