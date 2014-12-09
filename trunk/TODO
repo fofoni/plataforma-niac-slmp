@@ -22,6 +22,8 @@ antes de usar, é necessário:
 
 Falta fazer:
 
+- Desfazer css que faz janela com as ações e dados ficar só em 70%
+
 - página index com as opções de cadastro
 
 - adicionar regras de validação para cadastro de casos
@@ -42,10 +44,15 @@ Falta fazer:
   
 - Links organizadores no resultado busca de clientes.
 
+<<<<<<< .mine
+- Bug de PDF: gerador ignora completamente acentos.
+
+=======
 - Solucionar problema para resultado nulo na busca de clientes
 
 - Adicionar link para search de clientes nas outras páginas
 
+>>>>>>> .r77
 ===============================================================================
 
 
@@ -65,3 +72,4 @@ Já feito:
   como modelos independentes. Procurar no google por 'cake model inheritance'. (feito)
 
   - PDF no casos
+  - PDF no funcionários

@@ -1,6 +1,5 @@
 <div class="funcionarios view">
-<h2><?php echo __('Funcionario'); ?></h2>
-<h2>Testando 1, 2, 3</h2>
+<h2><?php echo __('Funcionário'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -72,9 +71,11 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Funcionario'), array('action' => 'edit', $funcionario['Funcionario']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Funcionario'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Funcionarios'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Funcionario'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Funcionário'), array('action' => 'edit', $funcionario['Funcionario']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Deletar Funcionário'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Funcionários'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Novos Funcionários'), array('action' => 'add')); ?> </li>
+		<br>
+		<li><?php echo $this->Html->link(__('Criar PDF'), array('action' => 'view_pdf', 'ext' => 'pdf', $funcionario['Funcionario']['id'])); ?></p>
 	</ul>
 </div>
