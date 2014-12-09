@@ -5,9 +5,11 @@ App::uses('AppController', 'Controller');
  *
  */
 class FuncionariosController extends AppController {
+	public $helpers = array('Html', 'Form');
+	public $components = array('RequestHandler');
 
-    public $uses = array(
-        'Funcionario'
+    public $funcionarios = array(
+        'funcionario'
     );
 
     public function beforeFilter() {
@@ -30,7 +32,7 @@ class FuncionariosController extends AppController {
 
     public function index() {
         $this->Funcionario->recursive = 0;
-        $this->set('users', $this->paginate());
+        $this->set('funcionarios', $this->paginate());
     }
 
     public function deslogado() {
@@ -100,12 +102,5 @@ class FuncionariosController extends AppController {
         $this->Session->setFlash(__('Não foi possível remover o funcionário.'));
         return $this->redirect(array('action' => 'index'));
     }
-
-/**
- * Scaffold
- *
- * @var mixed
- */
-	public $scaffold;
 
 }
