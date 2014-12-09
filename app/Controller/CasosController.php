@@ -72,7 +72,7 @@ class CasosController extends AppController {
     public function delete($id = null) {
         $this->request->allowMethod('post');
 
-        $this->User->id = $id;
+        $this->Caso->id = $id;
         if (!$this->Caso->exists()) {
             throw new NotFoundException(__('Caso não existe.'));
         }
@@ -83,4 +83,14 @@ class CasosController extends AppController {
         $this->Session->setFlash(__('Não foi possível remover o caso.'));
         return $this->redirect(array('action' => 'index'));
     }
+	
+	public function view_pdf($id = null) {
+		$this->Caso->id = $id;
+		if (!$this->Caso->exists()) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+		// increase memory limit in PHP
+		ini_set('memory_limit', '512M');
+		$this->set('post', $this->Caso->read(null, $id));
+	}
 }
