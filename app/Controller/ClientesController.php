@@ -42,30 +42,44 @@ class ClientesController extends AppController {
 
     public function search() {
 	//Não está pronto!
-        //$this->set('results',$this->Cliente->search($this->data['Cliente']['cpf'])); 
-	$chave=intval($this->data['Cliente']['chaveAntiga']);
-	$nome=$this->data['Cliente']['nomeSocial'];
-	$cpf=$this->data['Cliente']['cpf'];
-//	$antiga=$this->data
-	if ($chave!=null) {
-		if ($antiga==true) {
-		$this->Cliente->id = $chave;
-			if ($this->Cliente->exists()) {
-				$this->redirect(array('action'=>'view', $this->Cliente->id));
-			}
-		}
-		else {
-			//$this->Cliente->id = null;
-			$this->Cliente->chaveAntiga = $chave;
-			if ($this->Cliente->exists()) {
-				$this->redirect(array('action'=>'view', $this->Cliente->id));
-			}
-			else {
-		        	throw new NotFoundException(__('Cliente não existe.'));
-			}
-		}
+	$criterio=intval($this->data['Cliente']['buscaId']);
+	$busca=$this->data['Cliente']['buscaTexto'];
+	if ($busca==null) {
+            //throw new NotFoundException(__('Não foi inserida palavra-chave.'));
+	}
+	switch($criterio) {
+		case 0: 	// Chave Antiga
+			$resultados = $this->Cliente->find('all', array(
+				'conditions' => array('Cliente.chaveAntiga' => $busca)
+			));
+			break;
+		case 1:		// Chave Nova
+			$resultados = $this->Cliente->find('all', array(
+				'conditions' => array('Cliente.id' => $busca)
+			));
+			break;
+		case 2:		// Nome
+			$resultados = $this->Cliente->find('all', array(
+				'conditions' => array('Cliente.nome' => $busca)
+			));
+			break;
+		case 3:		// CPF
+			$resultados = $this->Cliente->find('all', array(
+				'conditions' => array('Cliente.cpf' => $busca)
+			));
+			break;
+	}
+	switch (count($resultados)) {
+		case 0:            
+//			throw new NotFoundException(__('Nenhum cliente encontrado. Busque novamente.'));
+//		case 1:
+//			$this->redirect(array('action' => 'view',$resultados[0]['Cliente']['id']));
+//			break;
+		default:
+			$this->request->data = $resultados;
 	}
     }
+
 
     public function edit($id = null) {
         $this->Cliente->id = $id;
@@ -84,7 +98,7 @@ class ClientesController extends AppController {
             );
         } else {
             $this->request->data = $this->Cliente->read(null, $id);
-            unset($this->request->data['Cliente']['password']);
+            //unset($this->request->data['Cliente']['password']);
         }
     }
 

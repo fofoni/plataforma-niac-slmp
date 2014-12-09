@@ -70,6 +70,9 @@ CREATE TABLE clientes (
   nomeSocial TINYTEXT,
   estadoCivil ENUM('solteiro', 'casado', 'divorciado', 'separado', 'viuvo'),
   dataCadastro DATE NULL,
+  observacoes TEXT,
+  buscaId INTEGER,
+  buscaTexto TINYTEXT,
   PRIMARY KEY(id)
 );
 

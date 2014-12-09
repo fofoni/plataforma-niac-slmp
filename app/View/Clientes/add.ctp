@@ -37,10 +37,13 @@
 		echo $this->Form->input('estadoCivil', array(
                 	'label' => 'Estado Civil',
 			'options' => array(
-				'Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Separado(a)', 'Viúvo(a)')
+				'', 'Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Separado(a)', 'Viúvo(a)')
             	));
 		echo $this->Form->input('dataCadastro', array(
                 	'label' => 'Data de Cadastro'
+            	));
+		echo $this->Form->input('observacoes', array(
+                	'label' => 'Observações'
             	));
 	?>
 	</fieldset>
