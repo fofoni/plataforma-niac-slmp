@@ -8317,3 +8317,12 @@ Request URL: /niac/css/decoracao.css
 Stack Trace:
 #0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-12-09 20:12:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /niac/css/decoracao.css
+Stack Trace:
+#0 C:\xampp\htdocs\niac\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

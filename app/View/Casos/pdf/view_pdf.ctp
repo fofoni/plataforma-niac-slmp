@@ -1,26 +1,27 @@
 <!-- File: /app/View/Casos/view_pdf.ctp -->
 
 <h2><?php echo __('Caso'); ?></h2>
-<?php echo __('IdCaso'); ?>
-<?php echo h($caso['Caso']['idCaso']); ?>
 
-<?php echo __('ChaveAntiga'); ?>
-<?php echo h($caso['Caso']['chaveAntiga']); ?>
-
-<?php echo __('Demanda'); ?>
-<?php echo h($caso['Caso']['demanda']); ?>
-
-<?php echo __('DataAbertura'); ?>
-<?php echo h($caso['Caso']['dataAbertura']); ?>
-
-
-<?php echo __('DataFechamento'); ?>
-<?php echo h($caso['Caso']['dataFechamento']); ?>
-
-<?php echo __('PermissaoPesquisa'); ?>
-<?php echo h($caso['Caso']['permissaoPesquisa']); ?>
-
-<?php echo __('Observacao'); ?>
-<?php echo h($caso['Caso']['observacao']); ?>
-
+<h3><?php echo __('IdCaso = ');
+          echo h($caso['Caso']['idCaso']);
+		  echo __('<br>');
+		  echo __('ChaveAntiga = ');
+		  echo h($caso['Caso']['chaveAntiga']);
+		  echo __('<br>');
+		  echo __('Demanda = ');
+		  echo h($caso['Caso']['demanda']);
+		  echo __('<br>');
+		  echo __('DataAbertura = ');
+		  echo h($caso['Caso']['dataAbertura']);
+		  echo __('<br>');
+		  echo __('DataFechamento = ');
+		  echo h($caso['Caso']['dataFechamento']);
+		  echo __('<br>');
+		  echo __('PermissaoPesquisa = ');
+		  echo h($caso['Caso']['permissaoPesquisa']);
+		  echo __('<br>');
+		  echo __('Observacao = ');
+		  echo h($caso['Caso']['observacao']);
+		  echo __('<br>');
+?></h3>
 	
