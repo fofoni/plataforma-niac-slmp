@@ -32,6 +32,14 @@ Falta fazer:
 
 - Criação de diferentes níveis de permissão para os usuários.
 
+- imagem do NIAC tem que ser um link pro home
+
+- ao adicionar um cliente, ele troca o casado/divorciado/solteiro/etc
+  (problema de base 0/base 1)
+
+- ao adicionar um cliente, o formulario da a opcao de datas de nascimento
+  somente ate 20 anos atras (e tambem varios anos a frente...)
+
 ===============================================================================
 
 
