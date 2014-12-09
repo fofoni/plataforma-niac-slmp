@@ -91,16 +91,26 @@ class FuncionariosController extends AppController {
     public function delete($id = null) {
         $this->request->allowMethod('post');
 
-        $this->User->id = $id;
+        $this->Funcionario->id = $id;
         if (!$this->Funcionario->exists()) {
             throw new NotFoundException(__('Funcionário não existe.'));
         }
-        if ($this->Funcionário->delete()) {
+        if ($this->Funcionario->delete()) {
             $this->Session->setFlash(__('Funcionário removido!'));
             return $this->redirect(array('action' => 'index'));
         }
         $this->Session->setFlash(__('Não foi possível remover o funcionário.'));
         return $this->redirect(array('action' => 'index'));
     }
+	
+	public function view_pdf($id = null) {
+		$this->Funcionario->id = $id;
+		if (!$this->Funcionario->exists()) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+		// increase memory limit in PHP
+		ini_set('memory_limit', '512M');
+		$this->set('funcionario', $this->Funcionario->read(null, $id));
+	}
 
 }
