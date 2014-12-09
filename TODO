@@ -22,11 +22,11 @@ antes de usar, é necessário:
 
 Falta fazer:
 
-- index de funcionários
-
 - página index com as opções de cadastro
 
 - adicionar regras de validação para cadastro de casos
+
+- delete em funcionarios não deleta, apenas desativa a conta.
 
 - adição de geração de PDFs ao template do CAKE padrão(cláuvin tá fazendo)
 
@@ -39,12 +39,15 @@ Falta fazer:
 
 - ao adicionar um cliente, o formulario da a opcao de datas de nascimento
   somente ate 20 anos atras (e tambem varios anos a frente...)
+  
+- Links organizadores no resultado busca de clientes.
 
 ===============================================================================
 
 
 Já feito:
 
+- index de funcionários (feito)
 - Exportação de view do posts pra PDF(cláuvin fez)
 - cadastro de casos (cláuvin fez)
 - avisar pro NIAC que a imagem deles tem erros de português.(cláuvin fez)
