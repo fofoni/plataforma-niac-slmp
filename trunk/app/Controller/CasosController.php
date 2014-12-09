@@ -91,6 +91,6 @@ class CasosController extends AppController {
 		}
 		// increase memory limit in PHP
 		ini_set('memory_limit', '512M');
-		$this->set('post', $this->Caso->read(null, $id));
+		$this->set('caso', $this->Caso->read(null, $id));
 	}
 }
