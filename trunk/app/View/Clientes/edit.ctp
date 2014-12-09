@@ -43,6 +43,9 @@
 		echo $this->Form->input('dataCadastro', array(
                 	'label' => 'Data de Cadastro'
             	));
+		echo $this->Form->input('observacoes', array(
+                	'label' => 'Observações'
+            	));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>

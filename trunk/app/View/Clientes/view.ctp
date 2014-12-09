@@ -61,6 +61,12 @@
 			<?php echo h($cliente['Cliente']['dataCadastro']); ?>
 			&nbsp;
 		</dd>
+
+		<dt><?php echo __('Observações'); ?></dt>
+		<dd>
+			<?php echo h($cliente['Cliente']['observacoes']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
