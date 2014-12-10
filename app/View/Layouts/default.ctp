@@ -37,7 +37,7 @@ $cakeDescription = __d('cake_dev', 'NIAC - Núcleo Interdisciplinar de Ações p
 <body>
 	<div id="container">
 		<div id="header">
-			<?php echo $this->Html->image('niac3_home.jpg', array('alt' => '$cakeDescription')); ?>
+			<?php echo $this->Html->image('niac3_home.jpg', array('alt' => '$cakeDescription', 'url' => array('controller' => 'pages', 'action' => 'index'))); ?>
 			<br>
 		</div>
 		<div id="content">
