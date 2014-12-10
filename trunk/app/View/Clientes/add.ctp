@@ -47,7 +47,7 @@
             	));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Enviar')); ?>
+<?php echo $this->Form->end(__('Adicionar Cliente')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Ações'); ?></h3>
