@@ -11,7 +11,7 @@
 			<?php echo h($funcionario['Funcionario']['nome']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('DataNascimento'); ?></dt>
+		<dt><?php echo __('Data de Nascimento'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['dataNascimento']); ?>
 			&nbsp;
@@ -36,7 +36,7 @@
 			<?php echo h($funcionario['Funcionario']['telefone']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Username'); ?></dt>
+		<dt><?php echo __('Login'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['username']); ?>
 			&nbsp;
@@ -51,17 +51,17 @@
 			<?php echo h($funcionario['Funcionario']['ativo']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Area'); ?></dt>
+		<dt><?php echo __('Área de Trabalho'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['area']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('DataEntrada'); ?></dt>
+		<dt><?php echo __('Data de Entrada'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['dataEntrada']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('DataSaida'); ?></dt>
+		<dt><?php echo __('Data de Saída'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['dataSaida']); ?>
 			&nbsp;
@@ -69,10 +69,10 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Editar Funcionário'), array('action' => 'edit', $funcionario['Funcionario']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Deletar Funcionário'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Deletar Funcionário'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Tem certeza que quer apagar o funcionário # %s?', $funcionario['Funcionario']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('Listar Funcionários'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('Novos Funcionários'), array('action' => 'add')); ?> </li>
 		<br>

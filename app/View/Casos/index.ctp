@@ -3,6 +3,8 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
+	<!-- NÃO alterar valores dentro dos sort(),
+		 pois alterá-los quebra o sort da tabela por aquilo que foi mudado. -->
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('chaveAntiga'); ?></th>
 			<th><?php echo $this->Paginator->sort('demanda'); ?></th>
@@ -10,7 +12,7 @@
 			<th><?php echo $this->Paginator->sort('dataFechamento'); ?></th>
 			<th><?php echo $this->Paginator->sort('permissaoPesquisa'); ?></th>
 			<th><?php echo $this->Paginator->sort('observacao'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Ações'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -24,9 +26,9 @@
 		<td><?php echo h($caso['Caso']['permissaoPesquisa']); ?>&nbsp;</td>
 		<td><?php echo h($caso['Caso']['observacao']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $caso['Caso']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $caso['Caso']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $caso['Caso']['id']), array(), __('Are you sure you want to delete # %s?', $caso['Caso']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $caso['Caso']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $caso['Caso']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Apagar'), array('action' => 'delete', $caso['Caso']['id']), array(), __('Tem certeza que quer deletar o caso # %s?', $caso['Caso']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -35,7 +37,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} de um total de {:count} entradas, começando na entrada {:start} e terminando na entrada {:end}.')
 	));
 	?>	</p>
 	<div class="paging">
@@ -47,8 +49,8 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Caso'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Novo Caso'), array('action' => 'add')); ?></li>
 	</ul>
 </div>

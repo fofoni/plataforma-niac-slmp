@@ -22,6 +22,8 @@ antes de usar, é necessário:
 
 Falta fazer:
 
+- Criar index próprio para clientes
+
 - Remover Posts do código.
 
 - Desfazer css que faz janela com as ações e dados ficar só em 70%
@@ -46,20 +48,18 @@ Falta fazer:
   
 - Links organizadores no resultado busca de clientes.
 
-<<<<<<< .mine
 - Bug de PDF: gerador ignora completamente acentos.
 
-=======
 - Solucionar problema para resultado nulo na busca de clientes
 
 - Adicionar link para search de clientes nas outras páginas
 
->>>>>>> .r77
 ===============================================================================
 
 
 Já feito:
 
+- português nos textos do sistema(menos clientes)
 - index de funcionários (feito)
 - Exportação de view do posts pra PDF(cláuvin fez)
 - cadastro de casos (cláuvin fez)

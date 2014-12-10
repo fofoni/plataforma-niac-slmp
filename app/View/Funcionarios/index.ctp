@@ -16,7 +16,7 @@
 			<th><?php echo $this->Paginator->sort('area'); ?></th>
 			<th><?php echo $this->Paginator->sort('dataEntrada'); ?></th>
 			<th><?php echo $this->Paginator->sort('dataSaida'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<th class="actions"><?php echo __('Ações'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -36,9 +36,9 @@
 		<td><?php echo h($funcionario['Funcionario']['dataEntrada']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['dataSaida']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $funcionario['Funcionario']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $funcionario['Funcionario']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['id'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $funcionario['Funcionario']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $funcionario['Funcionario']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Deletar'), array('action' => 'delete', $funcionario['Funcionario']['id']), array(), __('Tem certeza que quer deletar o funcionário # %s?', $funcionario['Funcionario']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -47,7 +47,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} de um total de {:count} entradas, começando na entrada {:start} e terminando na entrada {:end}.')
 	));
 	?>	</p>
 	<div class="paging">
@@ -59,7 +59,7 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Novo Funcionário'), array('action' => 'add')); ?></li>
 	</ul>

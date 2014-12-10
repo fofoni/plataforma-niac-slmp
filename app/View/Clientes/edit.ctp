@@ -48,13 +48,13 @@
             	));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Enviar')); ?>
+<?php echo $this->Form->end(__('Fazer Mudanças')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Cliente.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Cliente.id'))); ?></li>
+		<li><?php echo $this->Form->postLink(__('Deletar Cliente'), array('action' => 'delete', $this->Form->value('Cliente.id')), array(), __('Tem certeza que quer deletar o cliente # %s?', $this->Form->value('Cliente.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('Listar Clientes'), array('action' => 'index')); ?></li>
 	</ul>
 </div>
