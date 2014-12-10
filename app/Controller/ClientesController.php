@@ -40,6 +40,11 @@ class ClientesController extends AppController {
         }
     }
 
+	public function index() {
+        $this->Cliente->recursive = 0;
+        $this->set('clientes', $this->paginate());
+    }
+	
     public function search() {
 	//Não está pronto!
 	$criterio=intval($this->data['Cliente']['buscaId']);
@@ -101,13 +106,5 @@ class ClientesController extends AppController {
             //unset($this->request->data['Cliente']['password']);
         }
     }
-
-
-/**
- * Scaffold
- *
- * @var mixed
- */
-	public $scaffold;
 
 }
