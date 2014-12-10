@@ -1,7 +1,7 @@
-<!-- File: /app/View/Posts/index.ctp 
+<!-- File: /app/View/Pages/index.ctp 
 (edit links added) -->
 
-<h1>Acesso a tabelas</h1>
+<h3>Acesso a tabelas</h3>
 <?php echo $this->Html->link(
 	'Casos',
 	array('controller' => 'casos', 'action' => 'index')
