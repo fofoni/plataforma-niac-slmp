@@ -22,13 +22,9 @@ antes de usar, é necessário:
 
 Falta fazer:
 
-- Criar index próprio para clientes
-
-- Remover Posts do código.
+- SISTEMA DE BLOGS
 
 - Desfazer css que faz janela com as ações e dados ficar só em 70%
-
-- página index com as opções de cadastro
 
 - adicionar regras de validação para cadastro de casos
 
@@ -37,11 +33,6 @@ Falta fazer:
 - adição de geração de PDFs ao template do CAKE padrão(cláuvin tá fazendo)
 
 - Criação de diferentes níveis de permissão para os usuários.
-
-- imagem do NIAC tem que ser um link pro home
-
-- ao adicionar um cliente, ele troca o casado/divorciado/solteiro/etc
-  (problema de base 0/base 1)
 
 - ao adicionar um cliente, o formulario da a opcao de datas de nascimento
   somente ate 20 anos atras (e tambem varios anos a frente...)
@@ -68,6 +59,8 @@ Já feito:
 - adicionar regras de validação de cpf, rg, email, etc, ao cadastrar um novo
   funcionário: http://book.cakephp.org/2.0/en/models/data-validation.html ->
   Custom Validation Rules(cláuvin fez)
+- ao adicionar um cliente, ele troca o casado/divorciado/solteiro/etc
+  (problema de base 0/base 1)
  
  - logout (feito)
 
@@ -76,3 +69,7 @@ Já feito:
 
   - PDF no casos
   - PDF no funcionários
+- Remover Posts do código.
+- página index com as opções de cadastro
+- Criar index próprio para clientes
+- imagem do NIAC tem que ser um link pro home
