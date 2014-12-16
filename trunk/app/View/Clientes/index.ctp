@@ -64,5 +64,6 @@
 	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Novo Cliente'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Busca'), array('action' => 'search')); ?></li>
 	</ul>
 </div>
